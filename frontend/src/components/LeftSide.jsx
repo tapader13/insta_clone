@@ -122,7 +122,7 @@ const LeftSide = () => {
       formData.append('image', formDatas.image);
       console.log(formDatas, 'data');
       const response = await axios.post(
-        'http://localhost:8080/api/v1/post/addpost',
+        'https://insta-clone-1-xpqt.onrender.com/api/v1/post/addpost',
         formData,
         {
           headers: {
