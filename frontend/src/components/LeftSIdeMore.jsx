@@ -21,7 +21,7 @@ const LeftSIdeMore = () => {
   const handleLogOut = async () => {
     try {
       const response = await axios.get(
-        'http://localhost:8080/api/v1/user/logout'
+        'https://insta-clone-1-xpqt.onrender.com/api/v1/user/logout'
       );
       if (response.data.success) {
         toast({
