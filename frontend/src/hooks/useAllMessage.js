@@ -10,7 +10,7 @@ export const useAllMessage = () => {
     const getAllMessage = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8080/api/v1/message/all/${selectedUser?._id}`,
+          `https://insta-clone-1-xpqt.onrender.com/api/v1/message/all/${selectedUser?._id}`,
           {
             withCredentials: true,
           }
