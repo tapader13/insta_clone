@@ -26,7 +26,7 @@ const Profile = () => {
     const getAllPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/v1/post/${tab}/${id}`,
+          `https://insta-clone-1-xpqt.onrender.com/api/v1/post/${tab}/${id}`,
           {
             withCredentials: true,
           }
@@ -45,7 +45,7 @@ const Profile = () => {
   const handleFollow = async (id) => {
     try {
       const response = await axios.post(
-        `http://localhost:8080/api/v1/user/followunfollow/${id}`,
+        `https://insta-clone-1-xpqt.onrender.com/api/v1/user/followunfollow/${id}`,
         {},
         { withCredentials: true }
       );
