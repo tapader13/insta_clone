@@ -9,7 +9,7 @@ export const useUserProfile = (id) => {
     const getAllPost = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8080/api/v1/user/profile/${id}`,
+          `https://insta-clone-1-xpqt.onrender.com/api/v1/user/profile/${id}`,
           {
             withCredentials: true,
           }
