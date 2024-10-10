@@ -49,7 +49,7 @@ const SignUp = () => {
     try {
       setLoding(true);
       const response = await axios.post(
-        'http://localhost:8080/api/v1/user/register',
+        'https://insta-clone-1-xpqt.onrender.com/api/v1/user/register',
         data,
         {
           headers: {
