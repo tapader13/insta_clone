@@ -33,7 +33,7 @@ export function CommentDialog({ post, text }) {
     const getCommentsOfPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/v1/post/comment/all/${post._id}`,
+          `https://insta-clone-1-xpqt.onrender.com/api/v1/post/comment/all/${post._id}`,
           { withCredentials: true }
         );
         if (response.data.success) {
@@ -48,7 +48,7 @@ export function CommentDialog({ post, text }) {
   const handleCommentSubmit = async (id) => {
     try {
       const response = await axios.post(
-        `http://localhost:8080/api/v1/post/comment/${id}`,
+        `https://insta-clone-1-xpqt.onrender.com/api/v1/post/comment/${id}`,
         { text: comment },
         { withCredentials: true }
       );
@@ -71,7 +71,7 @@ export function CommentDialog({ post, text }) {
   const handleLikes = async (id) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/v1/post/likedislike/${id}`,
+        `https://insta-clone-1-xpqt.onrender.com/api/v1/post/likedislike/${id}`,
         { withCredentials: true }
       );
       if (response.data.success) {
