@@ -40,7 +40,7 @@ const ProfileEdit = () => {
     console.log(formData, 'data');
     try {
       const response = await axios.post(
-        'http://localhost:8080/api/v1/user/profile/edit',
+        'https://insta-clone-1-xpqt.onrender.com/api/v1/user/profile/edit',
         formData,
         { withCredentials: true }
       );
