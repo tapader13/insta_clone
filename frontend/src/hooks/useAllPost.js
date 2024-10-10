@@ -8,7 +8,7 @@ export const useAllPost = () => {
   useEffect(() => {
     const getAllPost = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/api/v1/post/all', {
+        const res = await axios.get('https://insta-clone-1-xpqt.onrender.com/api/v1/post/all', {
           withCredentials: true,
         });
         if (res.data.success) {
