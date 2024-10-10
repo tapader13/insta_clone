@@ -43,7 +43,7 @@ const Post = ({ post }) => {
     try {
       setLoading(true);
       const response = await axios.delete(
-        `http://localhost:8080/api/v1/post/delete/${id}`,
+        `https://insta-clone-1-xpqt.onrender.com/api/v1/post/delete/${id}`,
         { withCredentials: true }
       );
       if (response.data.success) {
@@ -67,7 +67,7 @@ const Post = ({ post }) => {
   const handleLikes = async (id) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/v1/post/likedislike/${id}`,
+        `https://insta-clone-1-xpqt.onrender.com/api/v1/post/likedislike/${id}`,
         { withCredentials: true }
       );
       if (response.data.success) {
@@ -98,7 +98,7 @@ const Post = ({ post }) => {
   const handleCommentSubmit = async (id) => {
     try {
       const response = await axios.post(
-        `http://localhost:8080/api/v1/post/comment/${id}`,
+        `https://insta-clone-1-xpqt.onrender.com/api/v1/post/comment/${id}`,
         { text: comment },
         { withCredentials: true }
       );
@@ -125,7 +125,7 @@ const Post = ({ post }) => {
   const handleBookmark = async (id) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/v1/post/bookmark/${id}`,
+        `https://insta-clone-1-xpqt.onrender.com/api/v1/post/bookmark/${id}`,
         { withCredentials: true }
       );
       if (response.data.success) {
