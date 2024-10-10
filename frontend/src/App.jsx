@@ -81,7 +81,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     if (user) {
-      const socket = io('http://localhost:8080', {
+      const socket = io('https://insta-clone-1-xpqt.onrender.com', {
         query: {
           userId: user._id,
         },
