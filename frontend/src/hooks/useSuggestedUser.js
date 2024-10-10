@@ -9,7 +9,7 @@ export const useSuggestedUser = () => {
     const getSuggestedUser = async () => {
       try {
         const res = await axios.get(
-          'http://localhost:8080/api/v1/user/suggestuser',
+          'https://insta-clone-1-xpqt.onrender.com/api/v1/user/suggestuser',
           {
             withCredentials: true,
           }
